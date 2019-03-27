@@ -1,8 +1,13 @@
 # About
 
-Fork of the ShareLateX version of the [Friggeri CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv) from Adrien Friggeri changed to render in A4 paper format. There is also a new option `nocolors` to disable use of colors in section headers.
-
+Fork of [DepressiveRobots A4 version](https://github.com/depressiveRobot/friggeri-cv-a4) of the [Friggeri CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv) from Adrien Friggeri.
 ![](samples/cv.png?raw=true)
+
+## Changes from DepressiveRobot's version:
+[] Conditionally tagged content which turns on/off sections at render. For easy CV generation between different sectors (e.g. academia vs. private)
+[X] Added photo.
+[] Added option for setting photo.
+
 
 ## Usage
 
@@ -24,5 +29,5 @@ This template needs the following dependencies installed:
 ![](samples/cv_nocolors.png?raw=true)
 
 ## License
-
+[MIT License](https://opensource.org/licenses/MIT), Copyright (C) 2019, Gilles Jacobs
 [MIT License](https://opensource.org/licenses/MIT), Copyright (C) 2017, Marvin Frommhold
