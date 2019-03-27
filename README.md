@@ -34,5 +34,3 @@ This template needs the following dependencies installed:
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT), Copyright (C) 2019, Gilles Jacobs
-
-[MIT License](https://opensource.org/licenses/MIT), Copyright (C) 2017, Marvin Frommhold
