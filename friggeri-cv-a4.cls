@@ -32,14 +32,16 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{cyan}{HTML}{25A2A6}
+\definecolor{yellow}{HTML}{F7C506}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
   \colorlet{purple}{gray}
-  \colorlet{brown}{gray}
   \colorlet{red}{gray}
   \colorlet{blue}{gray}
+  \colorlet{cyan}{gray}
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
@@ -127,12 +129,20 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
         red\or%
+        cyan\or%
         orange\or%
         green\or%
+        blue\or%
         purple\or%
-        brown\else%
+        yellow\or%
+        red\or%
+        cyan\or%
+        orange\or%
+        green\or%
+        blue\or%
+        purple\or
+        yellow\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -232,7 +242,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \printlist{publisher}%
     \setunit*{\addcomma\space}%
     \printfield{year}%
-    \newunit%
   }
   \par\vspace{0.3\baselineskip}
 }

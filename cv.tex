@@ -3,6 +3,10 @@
 % XeLaTeX Template
 % Version 1.1
 %
+% Extended version author:
+% Gilles Jacobs (https://jacobsgill.es)
+% 
+%
 % A4 version author:
 % Marvin Frommhold (depressiverobot.com)
 % https://github.com/depressiveRobot/friggeri-cv-a4
@@ -23,210 +27,290 @@
 % Options
 % 'print': remove colors from this template for printing
 % 'nocolors' to disable colors in section headers
+
 \documentclass[]{friggeri-cv-a4}
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
 \begin{document}
 
-\header{john}{smith}{junior business analyst} % Your name and current job title/field
+\header{gilles}{jacobs}{NLP, machine learning \& data engineer} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 % SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
-
-\begin{aside} % In the aside, each new line forces a line break
-\section{contact}
-123 Broadway
-City, State 12345
-Country
-~
-+0 (000) 111 1111
-+0 (000) 111 1112
-~
-\href{mailto:john@smith.com}{john@smith.com}
-\href{http://www.smith.com}{http://www.smith.com}
-\href{http://facebook.com/johnsmith}{fb://jsmith}
-\section{languages}
-english mother tongue
-spanish \& italian fluency
-\section{programming}
-{\color{red} $\varheartsuit$} JavaScript
-Python, C++, PHP
-CSS3 \& HTML5
+\begin{aside}
+    \includegraphics[width=0.75\textwidth]{headshot.jpg}
+    \section{about}
+        Tenderstraat 17
+        9000 Gent, BE
+        ~
+        \href{mailto:gilles@jacobsgill.es}{gilles@jacobsgill.es}
+        \href{tel:+32472627204}{+32 472 627204}
+        ~
+        \href{https://jacobsgill.es}{https://jacobsgill.es}
+        \href{https://www.linkedin.com/in/gilles-m-jacobs/}{{linkedin.com/in/gilles-m-jacobs}}
+        \href{https://github.com/GillesJ}{github.com/GillesJ}
+    \section{languages}
+        native Dutch
+        fluent English
+        fluent Spanish
+        intermediate French
+        notions of German
+    \section{programming}
+        Python, Java, R, Perl, Prolog, Lisp, CSS3 \& HTML5
+    \section{tools}
+     Scikit-learn, Tensorflow, Keras, git, R, Matlab/Octave, Spark, Pytorch, SQL
 \end{aside}
-
-%----------------------------------------------------------------------------------------
-% EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{education}
-
-\begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{2011--2012}
-{Masters {\normalfont of Commerce}}
-{The University of California, Berkeley}
-{\emph{Money Is The Root Of All Evil -- Or Is It?} \\ This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
-
-%------------------------------------------------
-
-\entry
-{2007--2008}
-{Bachelor {\normalfont of Business Studies}}
-{The University of California, Berkeley}
-{Specialization in Commerce}
-
-%------------------------------------------------
-
-\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 % WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
 \section{experience}
-
-\subsection{Full Time}
-
 \begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{2012--Now}
-{LEHMAN BROTHERS}
-{Los Angeles, California}
-{\emph{1\textsuperscript{st} Year Analyst} \\
-Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\
-Detailed achievements:
-\begin{itemize}
-\item Learned how to make amazing coffee
-\item Finally determined the reason for \textsc{PC LOAD LETTER}:
-\begin{itemize}
-\item Paper jam
-\item Software issues:
-\begin{itemize}
-\item Word not sending the correct data to printer
-\item Windows trying to print in letter format
-\end{itemize}
-\item Coffee spilled inside printer
-\end{itemize}
-\item Broke the office record for number of kitten pictures in cubicle
-\item Learned how to make more amazing coffee on a new machine
-\end{itemize}}
-
-%------------------------------------------------
-
+    \entry
+        {2017-now}
+        {PhD Researcher on \href{https://www.lt3.ugent.be/projects/event-extraction-and-sentiment-analysis-for-financ/}{SENTiVENT project}}
+        {LT3, Ghent University \& Solvay Business School/VUB}
+        {Applied machine learning-based NLP with a focus on data-driven deep learning algorithms for information extraction and subjectivity analysis on economic text. Responsible for data collection, visualization and annotation, researching \& implementing algorithms, and reporting of results.
+        \begin{itemize}
+            \item \href{https://www.lt3.ugent.be/projects/event-extraction-and-sentiment-analysis-for-financ/}{\emph{SENTiVENT project}:} Information extraction in economic news for financial applications.
+            \item System administrator of development and production servers (Linux-based).
+            \item Information Technology Lead: identifying the technological needs of the research group regarding of software, hardware and data infrastructure.
+            \item Intellectual property and valorization course for researchers top of class. % move this to additional training
+        \end{itemize}}
+    \entry
+        {2018}
+        {Consultancy for AI automated chat moderation}
+        {LT3, Ghent University}
+        {Research and develop AI-based automated chat moderation for a chat community start-up.}
+    \entry
+        {2015-2017}
+        {NLP Junior Researcher on \href{http://amicaproject.be/}{AMiCA project}}
+        {LT3, Ghent University}
+        {}
+    \entry
+        {2015}
+        {NLP Engineering Internship}
+        {CCL, KU Leuvem + AI-lab, VUB}
+        {\href{http://picto.ccl.kuleuven.be/}{\emph{Picto project}:} Advanced MSc of Artificial Intelligence internship at the Centrum voor Computerlinguïstiek (Centre for Computational Linguistics). Implementing Word Sense Disambiguation in the Text2Picto tool to aid the translation of natural language into pictographs. Additional internship experience at AI-lab, VUB for implementing English and Spanish Fluid Construction Grammar.}
 \end{entrylist}
 
-\subsection{Part Time}
-
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{education}
 \begin{entrylist}
+  \entry
+    {2014–2015}
+    {Advanced M.Sc. Artificial Intelligence}
+    {KU Leuven}
+    {magna cum laude\\
+    Specialization in Speech and Language Technologies.
+    }
+  \entry
+    {2013–2014}
+    {M.A. Computational and Formal Linguistics}
+    {KU Leuven}
+    {magna cum laude}
+  \entry
+    {2010–2013}
+    {B.A. Linguistic and Literature: Spanish and English}
+    {KU Leuven}
+    {cum laude\\Erasmus scholarship Universidad de Sevilla, Seville, Spain}
+  \entry
+    {2004–2010}
+    {Latijn-Wiskunde Talen}
+    {Sint-Albertus College Haasrode}
+    {}
+\end{entrylist}
 
-\entry
-{2010--2011}
-{LEHMAN BROTHERS}
-{London, United Kingdom}
-{\emph{Summer Intern} \\
-Received pre-placed offer from the Exotics Trading Desk as a result of very positive reviews. Rated "truly distinctive" for Analytical Skills and Teamwork.}
-
-%------------------------------------------------
-
-\entry
-{2008-2009}
-{Buy More}
-{Burbank, California}
-{\emph{Computer Repair Specialist} \\
-Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
-
-%------------------------------------------------
-
+%----------------------------------------------------------------------------------------
+% CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\section{certifications \& training}
+\begin{entrylist}
+  \entry
+    {2019}
+    {Deep Learning Specialization}
+    {Coursera}
+    {Deep learning MOOC course by Deeplearning.ai.}
+  \entry
+    {2017}
+    {Machine Learning Course}
+    {Coursera}
+    {Practical machine learning MOOC course.
+    }
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 % AWARDS SECTION
 %----------------------------------------------------------------------------------------
-
-\section{awards}
-
+\section{awards \& grants}
 \begin{entrylist}
+    \entry
+    {2017}
+    {Aspirant Strategic Basic Research Grant}
+    {Research Foundation Flanders}
+    {Granted an aspirant PhD fellowship grant The Research Foundation Flanders (FWO) based on my resume and proposal for the SENTiVENT project for information extraction in business news.}
+    
+    \entry
+    {2015}
+    {Accenture Tech Consultancy Challenge}
+    {Accenture}
+    {Finalist in the Accenture Tech Consultancy Challenga held at KU Leuven. Provide business and technical consultancy to an ISP. Selected for hiring.}
+\end{entrylist}
 
-%------------------------------------------------
-
-\entry
-{2011}
-{Postgraduate Scholarship}
-{School of Business, The University of California}
-{Awarded to the top student in their final year of a Bachelors degree. Mastered the art of filing accurate TPS reports.}
-
-%------------------------------------------------
-
+%----------------------------------------------------------------------------------------
+% VOLUNTEERING SECTION
+%----------------------------------------------------------------------------------------
+\section{volunteering}
+\begin{entrylist}
+    \entry
+        {2017-now}
+        {Hackerspace.Gent Funding Volunteer}
+        {Hackerspace.Gent}
+        {Managing social media accounts, co-organizing events and setting up data infrastructure for Hackerspace.Gent.}
+    \entry
+        {2014-2015}
+        {Student Representative for Master of Artificial Intelligence}
+        {KU Leuven}
+        {Student Representative in the Permanent Education Commision for the Advanced M.Sc. of Artificial Intelligence programme. Represent students' interests at education evaluation and planning meetings.}
+    \entry
+        {2013}
+        {English Language Instructor}
+        {Taalkampen DePauw, Leeds, UK}
+        {Responsible for teaching English proficiency and language skills, preparing language teaching course material \& assisting in recreational activities.}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 % COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
-
 \section{communication skills}
-
 \begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{2011}
-{Oral Presentation}
-{California Business Conference}
-{Presented the research I conducted for my Masters of Commerce degree.}
-
-%------------------------------------------------
-
-\entry
-{2010}
-{Poster}
-{Annual Business Conference, Oregon}
-{As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
-
-%------------------------------------------------
-
+    \entry
+        {2016-now}
+        {Oral and Poster Presentations}
+        {}
+        {Presented research findings at several international conferences.}
+    \entry
+        {2017-now}
+        {Social media campaigns}
+        {LT3 + UGentNLP + Hackerspace.Gent}
+        {Responsible for social media visibility for the LT3 research group on multiple platforms (LT3 homepage, Facebook \& Twitter). Scientific communication on the UGentNLP Twitter account. Hackerspace.Gent social media campaigns and event organization (Hackerspace.gent homepage, Meetup.com, Instagram, Facebook)}
 \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% ACADEMIC ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+\section{academic activities}
+
+\begin{refsection} % This is a custom heading for those references marked as "article" and containing "keyword=press"
+\nocite{*}
+\printbibliography[type=article, title={press \& communications}, keyword={press}, heading=bibheading]
+\end{refsection}
+
+\subsection{teaching}
+\begin{entrylist}
+    \entry
+        {2018-now}
+        {Advanced Python for Natural Language Processing}
+        {UGent}
+        {Made course material and taught class in advanced Python programming for NLP in the CALM Advanced Masters programme.}
+    \entry
+        {2017-2018}
+        {Processing Language with Python}
+        {UGent}
+        {Made course material and taught an introduction to programming with Python with a focus on automatic text processing in the CALM Advanced Masters programme.}
+    \entry
+        {2017-2018}
+        {Supervise BA Thesis "Qualitative analysis of sentiment analysis for economic news."}
+        {UGent}
+        {Supervisor for Lien De Wulf for BA thesis "Qualitative analysis of sentiment analysis for economic news: an analysis of economic newspaper articles".}
+    \entry
+        {2016-2017}
+        {Supervise BA Thesis "Semantische frames van events in economisch nieuws."}
+        {UGent}
+        {Supervisor for Quinten Meiresonne for BA thesis "Semantische frames van events in economisch nieuws: literatuur-en corpusstudie".}
+\end{entrylist}
+
+\subsection{reviewing \& scientific committees}
+\begin{entrylist}
+    \entry
+        {2019}
+        {10th Workshop on Computational Approaches to Subjectivity, Sentiment \& Social Media Analysis}
+        {WASSA}
+        {Seated on scientific committee reviewed submission WASSA10-31.}
+    \entry
+        {2019}
+        {European Journal for Applied Linguistics}
+        {EUJAL}
+        {Reviewed submission EUJAL-2019-0002.}
+    \entry
+        {2019}
+        {Journal of Neural Computing and Applications}
+        {NCAA}
+        {Reviewed submission NCAA-D-19-00239.}
+    \entry
+        {2019}
+        {Semeval 2019 Task 5}
+        {Semeval}
+        {Reviewed submission SEMEVAL-2019-T5-194.}
+    \entry
+        {2018}
+        {Journal of Cyberpsychology}
+        {CPS}
+        {Reviewed submission CPS2018-084}
+    \entry
+        {2018}
+        {6th Conference on CMC and Social Media Corpora}
+        {CMC}
+        {Seated on scientific commitee and reviewed submission CMC06-13.}
+    \entry
+        {2017}
+        {8th Workshop on Computational Approaches to Subjectivity, Sentiment \& Social Media Analysis}
+        {WASSA}
+        {Reviewed submission WASSA08-17.}
+\end{entrylist}
+
+\subsection{presentations \& conferences}
+Fill this in. Categories: Invited, main speaker, co-presenter, chair, attended.
 
 %----------------------------------------------------------------------------------------
 % INTERESTS SECTION
 %----------------------------------------------------------------------------------------
-
 \section{interests}
 
-\textbf{professional:} data analysis, company profiling, risk analysis, economics, web design, web app creation, software design, marketing \textbf{personal:} piano, chess, cooking, dancing, running
+\textbf{professional:} natural language processing, deep learning, machine learning, data science, financial technology \\
+\textbf{personal:} generative art, swimming, cybersecurity
 
 %----------------------------------------------------------------------------------------
 % PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
-
 \section{publications}
 
-\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+\begin{refsection} % This is a custom heading for those references marked as "article" but not containing "keyword=press"
+\nocite{*}
+\printbibliography[type=article, title={article in peer-reviewed journal}, notkeyword={press}, heading=bibheading]
+\end{refsection}
 
 \printbibsection{book}{books} % Print all books from the bibliography
 
 \begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
 \nocite{*}
-\printbibliography[type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+\printbibliography[type=inproceedings, title={peer-reviewed conferences/proceedings}, heading=bibheading]
 \end{refsection}
 
-\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+\begin{refsection} % This is a custom heading for those references marked as "misc" but not containing "keyword={data}"
 \nocite{*}
-\printbibliography[type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+\printbibliography[type=misc, title={other publications}, notkeyword={data}, heading=bibheading]
 \end{refsection}
 
-\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+% \begin{refsection} % This is a custom heading for those references marked as "article" and containing "keyword=press"
+% \nocite{*}
+% \printbibliography[type=article, title={press interviews}, keyword={press}, heading=bibheading]
+% \end{refsection}
 
 \printbibsection{report}{research reports} % Print all research reports from the bibliography
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
