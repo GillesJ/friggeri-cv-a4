@@ -4,9 +4,9 @@ Fork of [DepressiveRobots A4 version](https://github.com/depressiveRobot/frigger
 ![](samples/cv.png?raw=true)
 
 ## Changes from DepressiveRobot's version:
-[] Conditionally tagged content which turns on/off sections at render. For easy CV generation between different sectors (e.g. academia vs. private)
-[X] Added photo.
-[] Added option for setting photo.
+- [] Conditionally tagged content which turns on/off sections at render. For easy CV generation between different sectors (e.g. academia vs. private) or lengths (short for European vs. long for USA)
+- [X] Added photo.
+- [] Added option for setting photo.
 
 
 ## Usage
