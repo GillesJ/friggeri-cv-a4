@@ -12,6 +12,15 @@ pdf:
 ## Cleanup build files
 clean:
 	rm -rf cv.log cv.out cv.aux cv.blg cv.bbl cv.bcf cv.run.xml
+	
+## Make sample
+sample:
+	xelatex -output-directory="samples/" cv
+	biber -output-directory="samples/" cv
+	xelatex -output-directory="samples/" cv
+	pdftoppm -l 1 -png samples/cv.pdf > samples/cv.png
+	rm -rf samples/cv.log samples/cv.out samples/cv.aux samples/cv.blg samples/cv.bbl samples/cv.bcf samples/cv.run.xml samples/cv.pdf
+
 
 ## Show this help screen
 help:
