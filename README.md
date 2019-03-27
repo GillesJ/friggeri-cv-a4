@@ -7,7 +7,7 @@ Personal fork with extended functionality of [DepressiveRobots A4 version](https
 - [ ] Conditionally tagged content which turns on/off sections at render. For easy CV generation between different sectors (e.g. academia vs. private) or lengths (short for European vs. long for USA)
 - [X] Added photo.
 - [ ] Added option for setting photo.
-- [ ] Design: Fix leftmargin=* no indent on item lists and add hspace to let bullets breath
+- [X] Design: Fix leftmargin=* no indent on item lists and add hspace to let bullets breath
 - [ ] Design: Keep section header on same page as section start.
 - [ ] Include clickable hyperlinks to url on bibtex publication items if url is included.
 
