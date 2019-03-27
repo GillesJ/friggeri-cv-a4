@@ -1,7 +1,7 @@
 # About
 
 Personal fork with extended functionality of [DepressiveRobots A4 version](https://github.com/depressiveRobot/friggeri-cv-a4) of the [Friggeri CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv) from Adrien Friggeri.
-![](samples/cv.svg?raw=true)
+![](samples/cv.png?raw=true)
 
 ## Changes from DepressiveRobot's version:
 - [ ] Conditionally tagged content which turns on/off sections at render. For easy CV generation between different sectors (e.g. academia vs. private) or lengths (short for European vs. long for USA)
