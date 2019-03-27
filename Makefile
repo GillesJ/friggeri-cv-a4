@@ -18,7 +18,7 @@ sample:
 	xelatex -output-directory="samples/" cv
 	biber -output-directory="samples/" cv
 	xelatex -output-directory="samples/" cv
-	pdftoppm -l 1 -png samples/cv.pdf > samples/cv.png
+	pdftoppm -aa yes -aaVector yes -freetype yes -rx 150 -ry 150 -l 1 -png samples/cv.pdf > samples/cv.png
 	rm -rf samples/cv.log samples/cv.out samples/cv.aux samples/cv.blg samples/cv.bbl samples/cv.bcf samples/cv.run.xml samples/cv.pdf
 
 
